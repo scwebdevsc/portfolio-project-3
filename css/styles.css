@@ -35,6 +35,7 @@ html::-webkit-scrollbar-track {
 }
 html::-webkit-scrollbar-thumb {
   background: var(--main-color);
+  border-radius: 5rem;
 }
 body {
   background: var(--bg-color-2);
@@ -430,6 +431,170 @@ section {
   color: var(--text-color-2);
 }
 /* ########## END OF PRICING SECTION ########## */
+/* ########## REVIEW SECTION ########## */
+.review .review-slider {
+  box-shadow: var(--box-shadow);
+}
+.review .review-slider .slide {
+  background: var(--bg-color-1);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem;
+}
+.review .review-slider .slide img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.review .review-slider .slide h3 {
+  font-size: 2.5rem;
+  color: var(--text-color-1);
+}
+.review .review-slider .slide p {
+  font-size: 1.6rem;
+  color: var(--text-color-2);
+  line-height: 1.7;
+  padding: 1rem 0;
+}
+.review .review-slider .slide .stars {
+  padding: 1rem 0;
+  padding-bottom: 1.5rem;
+}
+.review .review-slider .slide .stars i {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+.swiper-pagination-bullet-active {
+  background: var(--main-color);
+}
+/* ########## END OF REVIEW SECTION ########## */
+/* ########## CONTACT SECTION ########## */
+.contact form {
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact form textarea,
+.contact form .inputBox input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: var(--text-color-1);
+  margin: 0.7rem 0;
+  background: var(--bg-color-1);
+  box-shadow: var(--box-shadow);
+  text-transform: none;
+  border-radius: 0.5rem;
+}
+.contact form textarea {
+  height: 20rem;
+  resize: none;
+}
+.contact form .inputBox input {
+  width: 49%;
+}
+/* ########## END OF CONTACT SECTION ########## */
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .box-container .box {
+  background: var(--bg-color-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
+.blogs .box-container .box .image {
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: var(--bg-color-2);
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+.blogs .box-container .box .content {
+  padding-top: 1rem;
+}
+.blogs .box-container .box .content h3 {
+  font-size: 2rem;
+  color: var(--text-color-1);
+  line-height: 1.5;
+}
+.blogs .box-container .box .content .icons {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1rem solid var(--text-color-2);
+  margin-top: 2rem;
+  padding-top: 1, 5rem;
+}
+.blogs .box-container .box .content .icons a {
+  font-size: 1.5rem;
+  color: var(--text-color-2);
+}
+.blogs .box-container .box .content .icons a:hover {
+  color: var(--main-color);
+}
+.blogs .box-container .box .content .icons a i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+
+/* ########## BLOGS SECTION ########## */
+/* ########## END OF BLOGS SECTION ########## */
+/* ########## FOOTER SECTION ########## */
+.footer {
+  background: var(--bg-color-1);
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--text-color-1);
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--text-color-2);
+  padding: 1rem 0;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .credit {
+  font-size: 2rem;
+  text-align: center;
+  border-top: 0.1rem solid var(--text-color-2);
+  padding: 1rem;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  color: var(--text-color-1);
+}
+.footer .credit span {
+  color: var(--main-color);
+}
+/* ########## END OF FOOTER SECTION ########## */
 
 /* ########## MEDIA QUERIES ########## */
 @media (max-width: 991px) {
@@ -471,5 +636,8 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .contact form .inputBox input {
+    width: 100%;
   }
 }

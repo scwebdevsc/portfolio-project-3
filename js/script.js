@@ -36,5 +36,17 @@ themeBtn.onclick = () => {
     document.body.classList.add('active');
   } else {
     document.body.classList.remove('active');
-  }
-}
+  };
+};
+
+var swiper = new Swiper(".review-slider", {
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5500,
+    disableOnInteraction: false
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
